@@ -1,4 +1,11 @@
 
+AppParameter =
+  name: "name"
+  description: "Application name"
+  paramType: "path"
+  required: true
+  allowMultiple: false
+  dataType: "string"
 
 
 module.exports =
@@ -11,13 +18,13 @@ module.exports =
         description: "List apps"
         operations: [
           require './apps/index'
-          require './apps/post'
+          require './apps/create'
         ]
       }
       {
         path: "/apps/{name}"
         description: "Operations about app"
-        operations: [
+        operations: el AppParameter for el in [
           require './apps/get'
           require './apps/rename'
           require './apps/transfer'
@@ -27,9 +34,9 @@ module.exports =
       {
         path: "/apps/{name}/server/maintenance"
         description: "Maintenance on app"
-        operations: [
-          require './apps/maintenance_get'
-          require './apps/maintenance_set'
+        operations: el AppParameter for el in [
+          require './apps/maintenance/get'
+          require './apps/maintenance/set'
         ]
       }
     ]
