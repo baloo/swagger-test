@@ -1,0 +1,10 @@
+{
+  "name": "nestinrun-api",
+  "version": "0.0.1",
+  "dependencies": {
+    "coffee-script": "1.2.x",
+    "express": "2.5.x",
+    "formidable":    "1.0.11",
+    "nodemon": ""
+  }
+}
