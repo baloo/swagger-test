@@ -1,7 +1,7 @@
-module.exports = (apis, models, name) ->
+module.exports = (apis, models, name, url) ->
   apiVersion: 0.1
   swaggerVersion: 1.1
-  basePath: "http://fog.91.209.78.166.xip.io/"
+  basePath: url
   resourcePath: "/" + name
   apis: apis
   models: models

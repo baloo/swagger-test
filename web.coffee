@@ -30,9 +30,11 @@ app.get "/", (req, res) ->
 app.get "/api", (req, res) ->
   res.send require "./main"
 
+fog_url = process.env.FOG_URL || "http://localhost:9000"
+
 app.get "/apis/:name", (req, res) ->
   content = require "./apis/" + req.params.name
-  base = (require "./base")(content.apis, content.models, req.params.name)
+  base = (require "./base")(content.apis, content.models, req.params.name, fog_url)
   res.send base
 
 port = process.env.PORT || 5000
