@@ -1,6 +1,6 @@
 module.exports = (app) ->
     httpMethod: "POST"
-    nickname: "maintenanceAppSet"
+    nickname: "AppMaintenanceSet"
     summary: "Toggle maintenance mode for an app"
     parameters: [
       app,

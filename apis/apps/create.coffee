@@ -1,6 +1,6 @@
 module.exports =
     httpMethod: "POST"
-    nickname: "createApp"
+    nickname: "AppCreate"
     summary: "Create app"
     parameters:[
         paramType: "body"

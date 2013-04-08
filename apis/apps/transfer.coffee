@@ -1,6 +1,6 @@
 module.exports = (app) ->
     httpMethod: "PUT"
-    nickname: "tranferApp"
+    nickname: "AppTransfer"
     summary: "Transfer an app"
     parameters: [
       app,

@@ -1,6 +1,6 @@
 module.exports = (app) ->
   httpMethod: "GET"
-  nickname: "getApp"
+  nickname: "AppGet"
   summary: "Get info for an app"
   responseClass: "App"
   parameters: [

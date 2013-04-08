@@ -1,6 +1,6 @@
 module.exports = (app) ->
   httpMethod: "DELETE"
-  nickname: "deleteApp"
+  nickname: "AppDelete"
   summary: "Delete app"
   notes: "Destroy an app"
   parameters: [

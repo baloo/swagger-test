@@ -1,7 +1,7 @@
 module.exports = (app) ->
     httpMethod: "GET"
-    nickname: "AppMaintenanceGet"
-    summary: "Get maintenance mode for an app"
+    nickname: "AppConfigList"
+    summary: "List config vars for an app"
     parameters: [
       app
     ]
