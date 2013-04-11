@@ -3,10 +3,11 @@ module.exports = (app) ->
     nickname: "AppTransfer"
     summary: "Transfer an app"
     parameters: [
-      app,
+      app
+      ,
         paramType: "body"
-        name: "app[name]"
         required: true
+        name: "app[transfer_owner]"
         dataType: "String"
         description: "The new app name"
         allowMultiple: false
