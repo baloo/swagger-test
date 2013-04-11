@@ -1,5 +1,5 @@
 module.exports = (app) ->
-    httpMethod: "GET"
+    httpMethod: "POST"
     nickname: "AppReleaseRollback"
     summary: "Rollback to a release"
     parameters: [
@@ -11,7 +11,6 @@ module.exports = (app) ->
         dataType: "string"
         description: "the release name"
         allowMultiple: false
-  
     ]
 
 
